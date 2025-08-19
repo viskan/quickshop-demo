@@ -1,0 +1,12 @@
+.box {
+    background-color: var(--background-color-secondary);
+    color: var(--text-color-secondary);
+    padding: var(--spacing-s);
+    font-size: 14px;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.box p {
+    margin-bottom: var(--spacing-s);
+}
