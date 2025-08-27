@@ -16,51 +16,6 @@ input[type="tel"] {
     padding: 10px;
 }
 
-fieldset {
-    border: none;
-    margin-top: 48px;
-}
-
-label:has(input[type="radio"]) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    cursor: pointer;
-}
-
-label:has(input[type="radio"]):hover {
-    background-color: #DEDEDE;
-}
-
-label:has(input[type="radio"]:checked) {
-    background-color: var(--background-color-secondary);
-    color: var(--text-color-secondary);
-}
-
-label:has(input[type="radio"]:focus-visible) {
-    outline: 3px solid var(--color-accent);
-    outline-offset: 1px;
-}
-
-label:has(input[type="radio"]) img {
-    width: 30px;
-}
-
-input[type="radio"] {
-    position: absolute;
-    inline-size: 1px;
-    block-size: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-    white-space: nowrap;
-}
-
 button[type="submit"] {
     margin-top: var(--spacing-xl);
 }

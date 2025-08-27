@@ -56,9 +56,9 @@
     <section class="checkout">
         <form method="POST" action="https://express.streamline.shop/purchases-v2">
             <input type="hidden" name="merchant" value="37B07D7E-AA5F-456D-B852-C238107A6343">
-            <input type="hidden" name="page" value="demo-v2-form-se">
+            <input type="hidden" name="page" value="demo-v3-form-se">
+            <input type="hidden" name="paymentMethod" value="Faktura" />
 
-            <h2>Order</h2>
             <label>
                 <span>Social Security Number</span>
                 <input type="text" name="socialSecurityNumber" required="true" autocomplete="on">
@@ -92,25 +92,7 @@
                 <input type="tel" name="cellphone" required="true" autocomplete="tel">
             </label>
 
-            <fieldset aria-labelledby="payment-title">
-                <h2 id="payment-title">Payment</h2>
-                <label>
-                    <span>Invoice</span>
-                    <input type="radio" name="paymentMethod" value="Faktura" checked />
-                </label>
-                <label>
-                    <span>Visa</span>
-                    <input type="radio" name="paymentMethod" value="VISA" />
-                    <img src="/images/visa-logo.png" alt="Visa logo" />
-                </label>
-                <label>
-                    <span>MasterCard</span>
-                    <input type="radio" name="paymentMethod" value="MC" />
-                    <img src="/images/mastercard-logo.png" alt="Mastercard logo" />
-                </label>
-            </fieldset>
-
-            <button type="submit" class="button button--large">Place order</button>
+            <button type="submit" class="button button--large">Place order with invoice</button>
         </form>
     </section>
 </div>
