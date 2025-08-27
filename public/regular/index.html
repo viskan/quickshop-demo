@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Viskan Streamline Express</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/main.css" />
+</head>
+
+<body>
+<header>
+    <a class="button" href="/">
+        <img src="/images/arrow-left.svg" alt=""/>
+        <span>Go back</span>
+    </a>
+    <img src="/images/happy-bean-logo.svg" alt="Happy Beans"/>
+    <a class="link-github" target="_blank" rel="noopener noreferrer" href="https://github.com/viskan/streamline-express-demo" aria-label="Source code on Viskan's GitHub page">
+        <img src="/images/viskan-logo-black.svg" alt="Viskan logo" />
+        <img src="/images/github-logo.svg" alt="GitHub logo" />
+    </a>
+</header>
+<div class="grid">
+    <article class="product">
+        <div class="product-image">
+            <img src="/images/product-french-delight-sub.png" alt="French Delight Sub"/>
+        </div>
+        <div class="product-info">
+            <div class="product-description">
+                <h1>
+                    <span>French Delight Sub</span>
+                    <img src="/images/heart.svg" alt="heart"/>
+                </h1>
+                <p>Powerful and intense. Full of aromas with flavors like chocolate and cinnamon. Long and generous aftertaste.</p>
+            </div>
+            <div class="product-data">
+                <div class="box">
+                    <p>French Delight Sub. 450g.</p>
+                    <p>Subscription</p>
+                    <ul>
+                        <li>Save 10%</li>
+                        <li>40% discount on your first order</li>
+                        <li>Every month delivery</li>
+                        <li>No curing period</li>
+                    </ul>
+                    <p>
+                        <del>Was 149 SEK</del>
+                    </p>
+                    <p>
+                        <strong>Now 80 SEK</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class="checkout">
+        <form method="POST" action="https://express.streamline.shop/purchases-v2">
+            <input type="hidden" name="merchant" value="37B07D7E-AA5F-456D-B852-C238107A6343">
+            <input type="hidden" name="page" value="demo-v2-form-se">
+
+            <h2>Order</h2>
+            <label>
+                <span>Social Security Number</span>
+                <input type="text" name="socialSecurityNumber" required="true" autocomplete="on">
+            </label>
+            <label>
+                <span>First Name</span>
+                <input type="text" name="firstName" required="true" autocomplete="given-name">
+            </label>
+            <label>
+                <span>Last Name</span>
+                <input type="text" name="lastName" required="true" autocomplete="family-name">
+            </label>
+            <label>
+                <span>Address</span>
+                <input type="text" name="invoiceAddress" required="true" autocomplete="address-line1">
+            </label>
+            <label>
+                <span>Postal Code</span>
+                <input type="text" name="invoiceZipcode" required="true" autocomplete="postal-code">
+            </label>
+            <label>
+                <span>City</span>
+                <input type="text" name="invoiceCity" required="true" autocomplete="address-level2">
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" required="true" autocomplete="email">
+            </label>
+            <label>
+                <span>Phone Number</span>
+                <input type="tel" name="cellphone" required="true" autocomplete="tel">
+            </label>
+
+            <fieldset aria-labelledby="payment-title">
+                <h2 id="payment-title">Payment</h2>
+                <label>
+                    <span>Invoice</span>
+                    <input type="radio" name="paymentMethod" value="Faktura" checked />
+                </label>
+                <label>
+                    <span>Visa</span>
+                    <input type="radio" name="paymentMethod" value="VISA" />
+                    <img src="/images/visa-logo.png" alt="Visa logo" />
+                </label>
+                <label>
+                    <span>MasterCard</span>
+                    <input type="radio" name="paymentMethod" value="MC" />
+                    <img src="/images/mastercard-logo.png" alt="Mastercard logo" />
+                </label>
+            </fieldset>
+
+            <button type="submit" class="button button--large">Place order</button>
+        </form>
+    </section>
+</div>
+</body>
+
+</html>

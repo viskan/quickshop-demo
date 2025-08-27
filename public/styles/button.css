@@ -1,0 +1,28 @@
+.button {
+    background-color: var(--background-color-secondary);
+    color: var(--text-color-secondary);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555555;
+}
+
+.button--large {
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    padding: var(--spacing-s);
+    font-size: 14px;
+    justify-content: center;
+}
