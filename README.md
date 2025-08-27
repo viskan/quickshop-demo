@@ -1,4 +1,4 @@
-# Streamline Express Demo
+# Quickshop Demo
 
 ## Build for production
 
@@ -6,7 +6,7 @@ Host the `public` directory on a server of your choice.
 
 ## Docker
 
-$ docker build --tag viskan/streamline-express-demo:latest .
+$ docker build --tag viskan/quickshop-demo:v1.0.0 .
 
 ## Preview in localhost
 

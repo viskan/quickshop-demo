@@ -1,17 +1,17 @@
 {
-  "name": "streamline-express-demo",
+  "name": "quickshop-demo",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Viskan Streamline Express Demo",
+  "description": "Viskan Quickshop Demo",
   "scripts": {
     "dev": "vite"
   },
-  "repository": "viskan/streamline-express-demo",
+  "repository": "https://github.com/viskan/quickshop-demo",
   "author": {
     "email": "info@viskan.se",
     "name": "Viskan System AB",
-    "url": "https://www.viskan.com/"
+    "url": "https://www.viskan.com"
   },
   "engines": {
     "node": ">=22"
